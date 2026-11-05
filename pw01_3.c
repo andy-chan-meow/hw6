@@ -6,7 +6,8 @@ int main(){
     int n = 0;
     int l = 0;
     int o = 0;
-    while( (q = getchar() ) != '#'){
+    while( (q = getchar() ) != '#' && (q =getchar()) != EOF){
+       
         if (isdigit(q)){
             n++;
         }else if (isalpha(q)){
@@ -15,7 +16,7 @@ int main(){
             o++;
         }
     } 
-    printf("num of digit: %d\n", n);
+    printf("\nnum of digit: %d\n", n);
     printf("num of letters: %d\n", l);
     printf("num of other chars: %d\n", o);
     return 0;

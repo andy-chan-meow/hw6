@@ -5,7 +5,7 @@ int main(){
     int val;
     while (1) {
         printf("Converter\n 1)B -> KB\n 2)KB -> MB\n 3)MB -> GB\n 4) bit -> B\n 5)Quit\n Enter num of convertion and value: ");
-        if(scanf("%d %d",&q, &val) != 2) {
+        if(scanf("%d %d",&q, &val) != 2 ) {
             printf("Bad format\n"); 
             while(getchar() != '\n');
             continue;

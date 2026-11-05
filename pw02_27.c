@@ -6,7 +6,7 @@ int main(){
 wchar_t prev = WEOF;
 wchar_t q;
 int c;
-while ((q = getwchar()) != L'#'){
+while ((q = getwchar()) != L'#' ){
     if (prev == q) {
         c++;
         prev = WEOF;
